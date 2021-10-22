@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header div.logo {
+    width: 50vw;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.searchTerm {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    padding-top: 20px;
+}
+
+.formulario1 form {
+    width: 30vw;
+    align-self: center;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .formulario1 .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .formulario1 .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.cabecera p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+div.menuHamburguesa {
+    text-align: center;
+}
+
+div.menuHamburguesa i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+.alinearTercerElemento {
+    display: flex;
+    flex-grow: 1;
+}
+
+@media (max-width: 360px) {
+    header nav {
+        display: none;
+    }
+}
+
+@media (min-width:361px) {
+    /*tablet*/
+    .cabecera {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .centrarDIspositivosMayores {
+        display: flex;
+    }
+    .centrar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .centrar1 {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    div.menuHamburguesa {
+        display: none;
+    }
+    header div.logo {
+        width: 100vw;
+    }
+}
+
+
+/*footer*/
+
+footer {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.iconoFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+    ;
+    align-self: start;
+    padding-top: 40px;
+}
+
+.copyright {
+    font-size: 8px;
+    padding-top: 20px;
+}
+
+
+/*login*/
+
+.formulario {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5%;
+}
+
+.cuadroTexto {
+    margin: 30px auto;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto';
+    width: 70%;
+    background-color: white;
+    display: block;
+    height: 30px;
+}
+
+.estiloBoton {
+    background-color: blue;
+    color: white;
+    margin: 30px auto;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto';
+    width: 70%;
+    display: block;
+    height: 30px;
+}
+
+.estiloBoton:hover {
+    background-color: #0022AA;
+    border: 1px solid #0022AA;
+    transition: all 0.5s ease-out;
+}
+
+@media (min-width:998) {
+    .footerFlex {
+        display: flex;
+        align-items: center;
+    }
+    .copyright {
+        display: flex;
+    }
+    .iconoFooter:hover {
+        color: rgb(32, 199, 54);
+        border: 1px solid green;
+        transition: all 0.5s ease-out;
+    }
+}

@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+header div.logo {
+    width: 50vw;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.searchTerm {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    padding-top: 20px;
+}
+
+.formulario1 form {
+    width: 30vw;
+    align-self: center;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .formulario1 .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .formulario1 .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.cabecera p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+div.menuHamburguesa {
+    text-align: center;
+}
+
+div.menuHamburguesa i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+
+/*contenedor*/
+
+section.banner img {
+    width: 100%;
+}
+
+article div.main-article {
+    width: 90%;
+    border-top: 1px solid #ebebeb;
+    margin: 15px;
+}
+
+.claseFlex {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+article div.main-article i {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 12px 10px;
+    position: relative;
+    top: -20px;
+    float: right;
+    transition: all 0.5s ease-out;
+}
+
+.price {
+    font-size: 18px;
+    width: 50%;
+    text-align: left;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    padding-top: 10px;
+    color: #666;
+    text-align: left;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+main section article {
+    background-color: #fff;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+article {
+    margin-top: 10px;
+}
+
+
+/*footer*/
+
+footer {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.iconoFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+    ;
+    align-self: start;
+    padding-top: 40px;
+}
+
+.copyright {
+    font-size: 8px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*.alinearTercerElemento {
+    display: flex;
+    flex-grow: 1;
+}*/
+
+@media (max-width:360px) {
+    /*movile*/
+    header nav {
+        display: none;
+    }
+}
+
+@media (min-width: 361px) {
+    /*tablet*/
+    div.menuHamburguesa {
+        display: none;
+    }
+    header nav {
+        display: inline-block;
+    }
+    .description {
+        visibility: hidden;
+        transition: all 0.1s ease-out;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main section .productos article {
+        width: 40vw;
+        margin: 10px auto;
+        transition: all 0.3s ease-out;
+    }
+    header div.logo {
+        width: 100vw;
+    }
+    article {
+        width: 50%;
+        border-top: 1px solid #ebebeb;
+        margin: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .cabecera {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .centrarDIspositivosMayores {
+        display: flex;
+    }
+    .centrar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .centrar1 {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width:998px) {
+    /*desktop*/
+    body {
+        overflow-y: scroll;
+    }
+    .cabecera {
+        padding: 10px 30px;
+    }
+    header .formulario1 {
+        padding: 0 5vw;
+    }
+    main section .productos article {
+        width: 20vw;
+    }
+    article:hover .description {
+        /*display: inline-block;*/
+        visibility: visible;
+        transition: all 0.3s ease-out;
+    }
+    main section .productos article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 0.3s ease-out;
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+        transition: all 0.3s ease-out;
+    }
+    .footerFlex {
+        display: flex;
+        align-items: center;
+    }
+    .copyright {
+        display: flex;
+    }
+    .iconoFooter:hover {
+        color: rgb(32, 199, 54);
+        border: none;
+        transition: all 0.5s ease-out;
+    }
+}
